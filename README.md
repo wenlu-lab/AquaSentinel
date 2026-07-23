@@ -2,7 +2,8 @@
 
 Code for **"AquaSentinel: Next-Generation AI System Integrating Sensor
 Networks for Urban Underground Water Pipeline Anomaly Detection via
-Collaborative MoE-LLM Agent Architecture"** (AAAI 2026).
+Collaborative MoE-LLM Agent Architecture"** (AAAI 2026, IAAI Technical
+Track on Emerging Applications of AI).
 
 AquaSentinel is a physics-informed AI system for real-time anomaly
 detection in urban underground water pipeline networks. It achieves
@@ -11,8 +12,6 @@ coverage) by combining strategic sensor placement, physics-based
 virtual sensors, a Mixture-of-Experts ensemble of spatiotemporal graph
 neural networks, the RTCA dual-threshold detector, causal flow-based
 leak localization, and an LLM agent for actionable reporting.
-
-Dataset: https://github.com/VV123/STEPS
 
 ## System Overview
 
@@ -96,13 +95,13 @@ adjacency matrices, so no graph-learning extensions are needed.
 
 ## Data Preparation
 
-The repository ships without data. `data/DATA_FORMAT.md` specifies the
-three inputs: a network topology JSON, network-wide state CSVs for
-normal operation and streaming, and the leakage scenario suite (one
-CSV per conduit-scenario pair, five scenario types per conduit).
-Network-wide states can be produced either by the physics augmentation
-module from raw sparse sensor exports or by a calibrated hydraulic
-model such as PCSWMM.
+This repository does not ship data. `data/DATA_FORMAT.md` specifies
+the expected input formats: a network topology JSON, network-wide
+state CSVs for normal operation and streaming, and the leakage
+scenario suite (one CSV per conduit-scenario pair, five scenario types
+per conduit). Network-wide states can be produced either by the
+physics augmentation module from raw sparse sensor exports or by a
+calibrated hydraulic model such as PCSWMM.
 
 ## Usage
 
@@ -140,14 +139,18 @@ and the LLM backend (Anthropic or any OpenAI-compatible endpoint).
 ## Citation
 
 ```bibtex
-@inproceedings{guo2026aquasentinel,
-  title     = {AquaSentinel: Next-Generation AI System Integrating Sensor
-               Networks for Urban Underground Water Pipeline Anomaly
-               Detection via Collaborative MoE-LLM Agent Architecture},
-  author    = {Guo, Qiming and Khatri, Bishal and Sun, Wenbo and
-               Tang, Jinwen and Zhang, Hua and Wang, Wenlu},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  year      = {2026}
+@article{guo2026aquasentinel,
+  title   = {AquaSentinel: Next-Generation AI System Integrating Sensor
+             Networks for Urban Underground Water Pipeline Anomaly
+             Detection via Collaborative MoE-LLM Agent Architecture},
+  author  = {Guo, Qiming and Khatri, Bishal and Sun, Wenbo and
+             Tang, Jinwen and Zhang, Hua and Wang, Wenlu},
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume  = {40},
+  number  = {47},
+  pages   = {40265--40271},
+  year    = {2026},
+  doi     = {10.1609/aaai.v40i47.41464}
 }
 ```
 
