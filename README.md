@@ -13,6 +13,8 @@ virtual sensors, a Mixture-of-Experts ensemble of spatiotemporal graph
 neural networks, the RTCA dual-threshold detector, causal flow-based
 leak localization, and an LLM agent for actionable reporting.
 
+Paper: https://ojs.aaai.org/index.php/AAAI/article/view/41464/45425
+
 ## System Overview
 
 The pipeline mirrors the architecture described in the paper:
