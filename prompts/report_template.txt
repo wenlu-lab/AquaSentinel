@@ -1,0 +1,18 @@
+Generate an AquaSentinel maintenance report from the following inputs.
+
+DETECTION RESULTS (D):
+{detection}
+
+NETWORK CONTEXT (C):
+{context}
+
+HISTORICAL PATTERNS (H):
+{history}
+
+Report structure:
+1. Executive Summary
+2. Technical Details (anomalous nodes, errors vs thresholds, localization)
+3. Severity and Priority Ranking
+4. Resource Requirements
+5. Safety Protocols
+6. Recommended Actions
